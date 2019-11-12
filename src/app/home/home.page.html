@@ -1,0 +1,78 @@
+<ion-header> </ion-header>
+
+<ion-content>
+  <!-- <ion-fab-button (click)="import()">
+    <ion-icon name="folder"></ion-icon>
+  </ion-fab-button>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col>
+        {{ filename }}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col *ngIf="errors === true" style="color: red;"
+        >File Invalid</ion-col
+      >
+    </ion-row>
+  </ion-grid> -->
+  <ion-card>
+    <ion-card-content>
+      <ion-grid no-padding>
+        <ion-row>
+          <ion-col>Upload License CSV</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <input
+              type="file"
+              id="txtFileUpload"
+              (change)="licenseCsvUpload($event)"
+              accept=".csv"
+            />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-grid no-padding>
+        <ion-row>
+          <ion-col>Upload Reports CSV</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <input
+              type="file"
+              id="txtFileUpload"
+              (change)="reportCsvUpload($event)"
+              accept=".csv"
+            />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-grid no-padding>
+        <ion-row>
+          <ion-col>Upload Search CSV</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <input
+              type="file"
+              id="txtFileUpload"
+              (change)="searchCsvUpload($event)"
+              accept=".csv"
+            />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

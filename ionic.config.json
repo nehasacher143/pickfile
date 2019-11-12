@@ -1,0 +1,7 @@
+{
+  "name": "pickfile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
